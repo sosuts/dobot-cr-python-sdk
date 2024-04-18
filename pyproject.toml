@@ -3,7 +3,7 @@ name = "dobot-cr-python-sdk"
 version = "0.1.0"
 description = "Add your description here"
 authors = [
-    { name = "SosUts", email = "uts.199.ubosou@gmail.com" }
+    { name = "sosuts", email = "sosuke.utsunomiya@gmail.com" }
 ]
 dependencies = [
     "numpy>=1.24.4",
