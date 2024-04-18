@@ -1,0 +1,31 @@
+[project]
+name = "dobot-cr-python-sdk"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "SosUts", email = "uts.199.ubosou@gmail.com" }
+]
+dependencies = [
+    "numpy>=1.24.4",
+]
+readme = "README.md"
+requires-python = ">= 3.11"
+
+[project.scripts]
+hello = "dobot_cr_python_sdk:hello"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "ipykernel>=6.29.4",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dobot_cr_python_sdk"]
